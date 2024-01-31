@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+    <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <a href="">
+                    <span class="headline">u-na</span>
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li class="on"><a href="#sc-visual" class="scroll-move">INTRO</a></li>
+                    <li><a href="#sc-project" class="scroll-move">PROJECT</a></li>
+                    <li><a href="#sc-plan" class="scroll-move">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-menu">
+                <span class="blind">확장메뉴</span>
+            </button>
+        </header>
+
+        <main class="container">
+            <section class="sc-visual" id="sc-visual">
+                <div class="wrap">
+                    <em>I
+                        <span class="box">
+                            <span data-text="create">CREATE</span>
+                            <span data-text="create">CREATE</span>
+                        </span> 
+                    </em>
+                    <em>MEMORABLE</em>
+                    <em><span class="blink">_</span>WORKS</em>
+
+                    <!-- <img src="./assets/images/intro4.png" alt class="img1">
+                    <img src="./assets/images/intro3.png" alt class="img2">
+                    <img src="./assets/images/intro8.png" alt class="img3">
+                    <img src="./assets/images/intro1.png" alt class="img4">
+                    <img src="./assets/images/intro9.png" alt class="img5"> -->
+                    
+                </div>
+            </section>
+
+            <section class="sc-content1">
+                <div class="content-wrap">
+                    <div class="area1">
+                        <ul class="area-wrap">
+                            <li class="area-item">
+                                <div class="img-box"><img src="http://allroundux.com/asset/images/why4.png" alt></div>
+                                <span class="title"> <em>Creative</em></span>
+                            </li>
+                            <li class="area-item">
+                                <div class="img-box"><img src="http://allroundux.com/asset/images/why1.png" alt></div>
+                                <span class="title"> <em>Responsible</em></span>
+                            </li>
+                            <li class="area-item">
+                                <div class="img-box"><img src="http://allroundux.com/asset/images/why2.png" alt></div>
+                                <span class="title"> <em>Passion</em></span>
+                            </li>
+                            <li class="area-item">
+                                <div class="img-box"><img src="http://allroundux.com/asset/images/why3.png" alt></div>
+                                <span class="title"> <em>Cooperation</em></span>
+                            </li>
+                            <li class="area-item">
+                                <div class="img-box"><img src="http://allroundux.com/asset/images/hand.png" alt></div>
+                                <span class="title"> <em>Considerate</em></span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="area2">
+                        <div class="line"></div>
+                        <div class="grid">
+                            <div class="grid-right">
+                                <div class="title">About me</div>
+                                <p class="desc">
+                                    <span class="font">"Just do it!"</span> 좋아하는 일을 위해 더 나아가고자 항상 노력합니다. <br>
+                                    시멘틱태그를 활용한 마크업으로 뼈대가 탄탄하고 명확한 웹구조로 <br>
+                                    프로덕트가 사용자들의 기억에 남는 일을 하고 싶습니다. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-project main" id="sc-project">
+                <div class="title">
+                    <h2 class="wrap">
+                        <em class="font">main</em> <br>
+                        <em>project<span class="blink">_</span></em>
+                    </h2>
+                </div>
+
+                <div class="item">
+                    <div class="thumb-box">
+                        <!-- 우아한 형제들(공통프로젝트), sign-cms, 위즈위드, archipelago productions <br>
+                        목업사이트에서 노트북같은거 활용해서 미리보여주기식으로 보여주는것도 좋음
+                        -> 4개정도 **이게 중요한 포인트! -->
+                        <img src="https://seona-cha.github.io/portfolio/assets/images/oliveyoung-pc.jpg" alt>
+                        <div class="text-box">
+                            <div class="title">
+                                <em>01</em>WIZWID <span>(MOBILE)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="con-area">
+                        
+                        <div class="box-wrap">
+                            <div class="box">
+                                <div class="title">description</div>
+                                <div class="desc">
+                                    <!-- 이프로젝트를 한 이유에 대해
+                                    이러한 부분을 보여주기위해 프로젝트를 함 -->
+                                    다양한 swiper slide와 탭메뉴를 구현하는 쇼핑몰을 클론코딩하며 스킬업하고자 <br>
+                                    위즈위드를 선택했고, 새로고침을 할때 상단 gnb메뉴가 없어지는 문제, 상품 탭메뉴가 <br>
+                                    정상작동 되지 않는 문제와 상품 영역 링크 개별처리를 하는 문제점들을 개선하고자 했습니다.
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title">skill</div>
+                                <div class="tags">
+                                    <span class="tag-item">mobile</span>
+                                    <span class="tag-item">Adaptive</span>
+                                    <span class="tag-item">Semantic Web</span>
+                                    <span class="tag-item">JQuery</span>
+                                    <span class="tag-item">Javascript</span>
+                                    <span class="tag-item">tab menu</span>
+                                    <span class="tag-item">gsap</span>
+                                    <span class="tag-item">swiper</span>
+                                    <span class="tag-item">JSON</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <h3 class="blind">link</h3>
+                            <div class="tags links">
+                                <a href="https://yunazzi.github.io/wizwid/" class="btn-link">
+                                    VIEW SITE
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    CODE REVIEW
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="thumb-box">
+                        <img src="https://seona-cha.github.io/portfolio/assets/images/oliveyoung-pc.jpg" alt>
+                        <div class="text-box">
+                            <div class="title">
+                                <em>02</em>SIGN-CMS <span>(PC)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="con-area">
+                        
+                        <div class="box-wrap">
+                            <div class="box">
+                                <div class="title">description</div>
+                                <div class="desc">
+                                    gsap과 swiper라이브러리를 활용해 다이나믹하게 구현하는 외국사이트를 클론코딩해보고자 선택했고, <br>
+                                    for each문과 gsap timeline을 이용하여 스크롤시 시간 순서대로 이미지 구현되는 방법과 <br>
+                                    sticky를 이용하여 고정된 화면에서 흘러가는 듯한 효과를 주는 방법을 보여주고자 했습니다.
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title">skill</div>
+                                <div class="tags">
+                                    <span class="tag-item">PC</span>
+                                    <span class="tag-item">semi-Responsive</span>
+                                    <span class="tag-item">Semantic Web</span>
+                                    <span class="tag-item">grid</span>
+                                    <span class="tag-item">JQuery</span>
+                                    <span class="tag-item">Javascript</span>
+                                    <span class="tag-item">gsap</span>
+                                    <span class="tag-item">swiper</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="link">
+                            <h3 class="blind">link</h3>
+                            <div class="tags links">
+                                <a href="" class="btn-link">
+                                    VIEW SITE
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    CODE REVIEW
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="thumb-box">
+                        <img src="https://seona-cha.github.io/portfolio/assets/images/oliveyoung-pc.jpg" alt>
+                        <div class="text-box">
+                            <div class="title">
+                                <em>03</em>ARCHIPELAGO PRODUCTIONS <span>(PC)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="con-area">
+                        
+                        <div class="box-wrap">
+                            <div class="box">
+                                <div class="title">description</div>
+                                <div class="desc">
+                                    <!-- 이프로젝트를 한 이유에 대해
+                                    이러한 부분을 보여주기위해 프로젝트를 함 -->
+
+                                    탭메뉴와 스크롤이벤트, sticky가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, scrollTrigger에 <br>
+                                    onEnter 와 onLeaveBack기능을 넣어 특정구간에 도달하거나 벗어나면 배경색상이 바뀌게끔 구현했습니다. <br>
+                                    또한, 솔루션 API사이트인 구글클라우드의 영상과 글귀들의 특징을 입혀 리뉴얼했습니다.
+
+                                    <!-- 탭메뉴와 스크롤이벤트가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, <br>
+                                    기존사이트에 동영상과 이미지가 많은 OTT사이트인 넷플릭스의 특징을 입혀 리뉴얼하고자 했습니다. -->
+                                    <!-- 넷플릭스,네이버 커리어 참고 -->
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title">skill</div>
+                                <div class="tags">
+                                    <span class="tag-item">PC</span>
+                                    <span class="tag-item">Adaptive</span>
+                                    <span class="tag-item">Semantic Web</span>
+                                    <span class="tag-item">renewal</span>
+                                    <span class="tag-item">JQuery</span>
+                                    <span class="tag-item">Javascript</span>
+                                    <span class="tag-item">gsap</span>
+                                    <span class="tag-item">swiper</span>
+                                    <span class="tag-item">JSON</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <h3 class="blind">link</h3>
+                            <div class="tags links">
+                                <a href="" class="btn-link">
+                                    VIEW SITE
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                                <a href="" class="btn-link">
+                                    CODE REVIEW
+                                    <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="sc-project sub">
+                <div class="title">
+                    <h2 class="wrap">
+                        <em class="font">Curriculum</em> <br>
+                        <em>project<span class="blink">_</span></em>
+                    </h2>
+                </div>
+                
+                <div class="content">
+                    <div class="item">
+                        <a href="" class="link">
+                            <div class="thumb-box">
+                                <img src="https://cdn.cuberto.com/cb/hello/postcard/1@2x.jpg" alt>
+                            </div>
+                            <div class="title">
+                                <span class="sub">PC</span>
+                                <h3>NAVER</h3>
+                            </div>
+                        </a>
+
+                        <div class="sub-area">
+                            <a href="" class="btn-link">
+                                VIEW SITE
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                            <a href="" class="btn-link">
+                                CODE REVIEW
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="" class="link">
+                            <div class="thumb-box">
+                                <img src="https://cdn.cuberto.com/cb/hello/postcard/2@2x.jpg" alt>
+                            </div>
+                            <div class="title">
+                                <span class="sub">PC</span>
+                                <h3>SEOUL CITY</h3>
+                            </div>
+                        </a>
+
+                        <div class="sub-area">
+                            <a href="" class="btn-link">
+                                VIEW SITE
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                            <a href="" class="btn-link">
+                                CODE REVIEW
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="" class="link">
+                            <div class="thumb-box">
+                                <img src="https://cdn.cuberto.com/cb/hello/postcard/3@2x.jpg" alt>
+                            </div>
+                            <div class="title">
+                                <span class="sub">PC</span>
+                                <h3>ANDAR</h3>
+                            </div>
+                        </a>
+
+                        <div class="sub-area">
+                            <a href="" class="btn-link">
+                                VIEW SITE
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                            <a href="" class="btn-link">
+                                CODE REVIEW
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <a href="" class="link">
+                            <div class="thumb-box">
+                                <img src="https://cdn.cuberto.com/cb/hello/postcard/4@2x.jpg" alt>
+                            </div>
+                            <div class="title">
+                                <span class="sub">PC</span>
+                                <h3>WOOWAHAN</h3>
+                            </div>
+                        </a>
+
+                        <div class="sub-area">
+                            <a href="" class="btn-link">
+                                VIEW SITE
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                            <a href="" class="btn-link">
+                                CODE REVIEW
+                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- https://cdn.cuberto.com/cb/hello/postcard/1@2x.jpg -->
+
+            <section class="sc-plan" id="sc-plan">
+
+                <div class="title-area">
+                    <h2>Final goal</h2>
+                    <p>저의 최종목표를 위해~ // 저는 이걸 공부할것입니다.
+                        기업에서 요구하는 사항들
+                    </p>
+
+                    <ul>
+                        기업의 지원자격이랑 우대사항 참고해서 작성
+                        (하이브랩, 이지미디어)
+                        <img src="../../../../yunazzi/Desktop/스크린샷 2023-12-23 오후 8.37.37.png" alt="">
+                        구체화된 지식에 대해서 공부하겠다는 걸 보여주기 + 내용 더 쓰기
+                    </ul>
+                </div>
+            </section>
+
+
+            
+        </main>
+
+        <footer class="footer">
+            <a href="">
+                <p>Back to the top</p>
+                <img src="https://uploads-ssl.webflow.com/64647465ee6aa9f237f86105/64672984196d16b074a6553f_Direction%3DUp.svg" alt>
+            </a>
+            <small class="copyright">
+                © 2023 All Rights Reserved. Design & Developed by yuna kwon.
+            </small>
+        </footer>
+
+        <div class="circle">
+            <div class="circle_progress_wrap">
+                <svg class="circle_progress" width="40" height="40" viewBox="0 0 120 120">
+                  <circle class="frame" cx="60" cy="60" r="54" stroke-width="3" />
+                  <circle class="bar" cx="60" cy="60" r="54" stroke-width="4" />
+                </svg>
+                <button class="btn-gotop">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18385 10.3818C5.92996 10.1076 5.9403 9.67351 6.20695 9.41237L11.5403 4.18911C11.7977 3.93696 12.2023 3.93696 12.4597 4.18911L17.793 9.41237C18.0597 9.67351 18.07 10.1076 17.8161 10.3818C17.5623 10.6561 17.1403 10.6667 16.8736 10.4056L12.6667 6.28545L12.6667 19.3143C12.6667 19.693 12.3682 20 12 20C11.6318 20 11.3333 19.693 11.3333 19.3143L11.3333 6.28545L7.12638 10.4056C6.85973 10.6667 6.43775 10.6561 6.18385 10.3818Z" fill="#020202"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- <button class="btn-gotop">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18385 10.3818C5.92996 10.1076 5.9403 9.67351 6.20695 9.41237L11.5403 4.18911C11.7977 3.93696 12.2023 3.93696 12.4597 4.18911L17.793 9.41237C18.0597 9.67351 18.07 10.1076 17.8161 10.3818C17.5623 10.6561 17.1403 10.6667 16.8736 10.4056L12.6667 6.28545L12.6667 19.3143C12.6667 19.693 12.3682 20 12 20C11.6318 20 11.3333 19.693 11.3333 19.3143L11.3333 6.28545L7.12638 10.4056C6.85973 10.6667 6.43775 10.6561 6.18385 10.3818Z" fill="#020202"/>
+            </svg>
+        </button> -->
+        
+    </div>
+</body>
+</html>

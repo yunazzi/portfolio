@@ -1,0 +1,335 @@
+.sc-visual{ font-size: 11.5vw; padding: 10vw 5vw; }
+.sc-visual img{ width: 15vw; transition: .5s; will-change: transform; }
+.sc-visual .wrap{ display: flex; flex-direction: column; line-height:110%;}
+.sc-visual .wrap .img1{ position: absolute; top: -25vw; right: 12vw; z-index: -1; width: 50vw; }
+.sc-visual .wrap .img2{ position: absolute; top: 14vw; right: 75vw; z-index: -1; filter: blur(5px);}
+.sc-visual .wrap .img3{ position: absolute; top: 25vw; right: 10vw; width: 20vw; z-index: -1;}
+.sc-visual .wrap .img4{ position: absolute; top: 4vw; left: 2vw; z-index: -1; }
+.sc-visual .wrap .img5{ position: absolute; top: 40vw; left: 45vw; z-index: -1; width: 13vw;}
+
+
+.sc-visual .wrap>em{ display: flex; align-items: center; }
+.sc-visual em{ padding: 0.1em 0; margin: -0.1em 0; display: inline-block; }
+.sc-visual .box{
+    position: relative; overflow: hidden;
+    color: #e0fd60; margin-left: 30px;
+    padding: 0 60px; font-family: "Gallery Modern",sans-serif; 
+    font-weight: 400; font-size: 105%; line-height: .9; 
+    border: 2px solid #e0fd60; border-radius: 120px; 
+    height: 10vw;
+}
+.sc-visual .box:hover{background-color: #e0fd60; color: #000;}
+.sc-visual .box:hover span{ transform: translateY(-100%); }
+.sc-visual .box span{ display: block; transition: transform .8s cubic-bezier(.16,1,.3,1); height: 10vw;}
+.sc-visual .box span:last-child{ position: absolute; top: 100%; width: 100%; }
+.sc-visual .box.change{ background-color: #e0fd60; color: #000; }
+
+/* .sc-visual .desc-wrap{ position: relative; font-size: 2vw; padding: 5vw 0; text-align: right; } */
+/* .sc-visual .desc-wrap .img4{ position: absolute; top: 4vw; left: 2vw; z-index: -1; }
+.sc-visual .desc-wrap .img5{ position: absolute; top: -4vw; left: 28vw; z-index: -1; width: 13vw;} */
+
+
+
+
+
+
+/* sc-content1 */
+.sc-content1{ background: #fff; height: auto; color: #000; }
+.sc-content1 .content-wrap{ padding: 150px 0; overflow: hidden; }
+.sc-content1 .area1{ margin: 0; }
+.sc-content1 .area-wrap{ display: flex; gap: 50px; will-change: transform; }
+.sc-content1 .area-item{ display: flex; gap: 30px; align-items: center; }
+
+.sc-content1 img{ width: 7vw; }
+.sc-content1 .area1 .title{ text-transform: uppercase; letter-spacing: -.03vw; font-size: 7vw; font-weight: 400; line-height: 85%; }
+.sc-content1 .title em{ font-family: "Gallery Modern",sans-serif; }
+.sc-content1 .area2{ padding: 0 6.25vw; }
+.sc-content1 .area2 .grid{
+    display: flex;
+    justify-content: flex-end;
+}
+.sc-content1 .area2 .grid-right{
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+}
+.sc-content1 .area2 .title{
+    font-size: 1vw;
+    font-weight: 200;
+}
+.sc-content1 .area2 .line{
+    margin: 7vw 0 3vw;
+    position: relative;
+    height: 1px;
+    background: #000;
+}
+.sc-content1 .area2 .desc{
+    font-size: 1.6vw;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: "pretendard", sans-serif;
+}
+
+/* sc-project 공통*/
+.sc-project{
+    line-height: 1;
+    overflow: hidden;
+    padding: 120px 5vw;
+}
+.sc-project .title .wrap{
+    margin-bottom: 100px;
+    line-height: 1;
+}
+.sc-project .title em{
+    text-transform: uppercase;
+    font-size: 10vw;
+    letter-spacing: -.02em;
+}
+.sc-project .title .font{
+    font-family: "Gallery Modern",sans-serif;
+    font-size: 10vw;
+}
+.sc-project .item .line{
+    margin: 3vw 0 3vw;
+    position: relative;
+    height: 1px;
+    background: #fff;
+}
+.sc-project .box .btn-link:hover,.sc-project .sub-area .btn-link:hover{
+    transform: translateX(10px);  
+}
+.sc-project .box .btn-link,.sc-project .sub-area .btn-link{
+    transition: .3s;
+}
+
+
+
+
+
+/* sc-project main*/
+.sc-project.main .item +.item{
+    margin-top: 100px;
+}
+.sc-project .item .thumb-box{
+    /* position: relative;
+    padding-bottom: 40%; */
+}
+.sc-project .item .thumb-box img{
+    width: 700px;
+    border-radius: 50px;
+    /* width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px; */
+}
+.sc-project .item .text-box{
+    position: relative;
+    margin-top: 3vw;
+    top: 100%;
+    font-size: 4.5vw;
+}
+.sc-project .item .text-box .title{
+    display: flex;
+    align-items: center;
+}
+.sc-project .item .text-box em{
+    width: 10vw;
+    font-size: 4vw; 
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.sc-project .item .text-box span{
+    font-size: 3vw;
+    margin-top: 5px; padding-left: 10px;
+}
+.sc-project .con-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sc-project .con-area .box-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw; 
+}
+.sc-project .con-area .box{
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+}
+.sc-project .con-area .box .title{
+    font-size: .8vw;
+    text-transform: uppercase;
+    width: 8vw;
+    text-align: right;
+}
+.sc-project .con-area .box .desc{
+    font-size: 1.4vw;
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: "pretendard", sans-serif;
+}
+.sc-project .con-area .box .tags{
+    display: flex;
+    gap: 10px; font-size: 1.1vw;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+.sc-project .con-area .box .tag-item{
+    text-transform: uppercase;
+    border: 1px solid #fff; padding: 5px 17px;
+    border-radius: 50px;
+}
+
+.sc-project .con-area .link{
+    display: flex;
+    margin-right: 80px;
+}
+.sc-project .con-area .link .tags.links{
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: "Matter",sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sc-project .link .tags a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sc-project .link .btn-link{
+    transition: .3s;
+}
+.sc-project .link svg{
+    width: 14px;
+}
+.sc-project .link svg path{stroke: #fff;}
+
+.sc-project .link .btn-link:hover{
+    transform: translateX(10px);
+}
+.sc-project .link .btn-link{
+    transition: .3s;
+}
+
+.sc-project.main .item{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+/* sc-project sub */
+
+.sc-project{
+    /* 쩌리프로젝트니 한행을 차지하게 하지말고 간단하게 만들기 */
+}
+.sc-project .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.sc-project .content .item{
+    position: relative;
+    overflow: hidden;
+}
+.sc-project .content .link::before{
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+.sc-project .content .link{
+    position: relative;
+}
+.sc-project .content .thumb-box{
+    position: relative;
+    padding-bottom: 60%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.sc-project .content .thumb-box img{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.sc-project .content .title{
+    position: absolute;
+    top: 0; left: 0;
+    padding: 30px;
+    z-index: 2;
+    transform: translateY(-100%);
+    transition: .3s;
+}
+.sc-project .content .title span{
+    font-size: 18px;
+}
+.sc-project .content .title h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sc-project .content .sub-area{
+    display: flex;
+    position: absolute;
+    bottom: 0; right: 0;
+    padding: 30px;
+    gap: 30px;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: .3s;
+}
+.sc-project .content .sub-area a,.sc-project .box .tags a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sc-project .content .sub-area svg,.sc-project .box svg{
+    width: 14px;
+}
+.sc-project .content .sub-area svg path,.sc-project .box svg path{stroke: #fff;}
+.sc-project .content .item:hover .link::before{
+    opacity: 1;
+}
+.sc-project .content .item:hover .title,
+.sc-project .content .item:hover .sub-area{
+    transform: translateY(0%);
+}
+
+
+
+/* sc-plan */
+
+.sc-plan{
+    padding: 100px 5vw;
+}
+.sc-plan ul{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.sc-plan ul{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 28px;
+    border-radius: 30px;
+}
+.sc-plan .title-area{
+    font-size: 8vw;
+}
+.sc-plan .title-area h2{
+    font-family: "Gallery Modern",sans-serif;
+}
+.sc-plan .title-area p{
+    font-size: 28px;
+}

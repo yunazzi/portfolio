@@ -1,0 +1,51 @@
+@font-face{
+    font-family: "Matter-light";
+    src: url(../fonts/matter-light.woff2) format('woff2');
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Matter";
+    src: url(../fonts/matter-regular.woff2) format('woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Gallery Modern";
+    src: url(../fonts/gallery-modern-regular.woff2) format('woff2');
+    font-weight: 400;
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+
+
+
+/* pretendard */
+@font-face{
+    font-family: "pretendard";
+    src: url(../fonts/Pretendard-Thin.woff) format('woff');
+    font-weight: 200;
+}
+@font-face{
+    font-family: "pretendard";
+    src: url(../fonts/Pretendard-Light.woff) format('woff');
+    font-weight: 300;
+}
+@font-face{
+    font-family: "pretendard";
+    src: url(../fonts/Pretendard-Regular.woff) format('woff');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "pretendard";
+    src: url(../fonts/Pretendard-Medium.woff) format('woff');
+    font-weight: 500;
+}
+@font-face{
+    font-family: "pretendard";
+    src: url(../fonts/Pretendard-Bold.woff) format('woff');
+    font-weight: 700;
+}
+
+
+@font-face{
+    font-family: "Lobster";
+    src: url(../fonts/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
+}
