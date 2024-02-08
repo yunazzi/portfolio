@@ -2,6 +2,7 @@
 @import './reset.css';
 @import './common.css';
 
+
 .header .gnb,.header .logo{
     mix-blend-mode: difference;
 }
@@ -25,7 +26,6 @@
 .header .btn-menu{
     display: none;
 }
-/* .white{color: #fff;} */
 
 
 .footer{

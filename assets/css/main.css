@@ -114,7 +114,7 @@
     /* position: relative;
     padding-bottom: 40%; */
 }
-.sc-project .item .thumb-box img{
+.sc-project.main .item .thumb-box img{
     width: 700px;
     border-radius: 50px;
     /* width: 100%;
@@ -230,85 +230,62 @@
 .sc-project{
     /* 쩌리프로젝트니 한행을 차지하게 하지말고 간단하게 만들기 */
 }
-.sc-project .content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-}
-.sc-project .content .item{
-    position: relative;
-    overflow: hidden;
-}
-.sc-project .content .link::before{
-    position: absolute;
-    top: 0; left: 0;
-    right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    content: '';
-    z-index: 1;
-    opacity: 0;
-    transition: .3s;
-}
-.sc-project .content .link{
-    position: relative;
-}
-.sc-project .content .thumb-box{
-    position: relative;
-    padding-bottom: 60%;
-    overflow: hidden;
-    border-radius: 30px;
-}
-.sc-project .content .thumb-box img{
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-}
-.sc-project .content .title{
-    position: absolute;
-    top: 0; left: 0;
-    padding: 30px;
-    z-index: 2;
-    transform: translateY(-100%);
-    transition: .3s;
-}
-.sc-project .content .title span{
-    font-size: 18px;
-}
-.sc-project .content .title h3{
-    font-size: 50px;
-    font-weight: bold;
-}
-.sc-project .content .sub-area{
+.sc-project.sub .content{
     display: flex;
-    position: absolute;
-    bottom: 0; right: 0;
-    padding: 30px;
-    gap: 30px;
-    z-index: 2;
-    transform: translateY(100%);
-    transition: .3s;
+    align-items: flex-end;
+    gap: 2.5vw;
 }
-.sc-project .content .sub-area a,.sc-project .box .tags a{
+.sc-project.sub .thumb-box{
+    width: 33vw;
+}
+.sc-project.sub .item img{
+    width: 33vw;
+    border-radius: 1.4vw;
+    transition: .3s;
+    transform: scale(1.01);
+}
+.sc-project.sub .item:nth-child(2),.sc-project.sub .item:nth-child(4){
+    width: 22vw;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.sc-project.sub .item:nth-child(2) img,.sc-project.sub .item:nth-child(4) img{
+    object-fit: cover;
+    background: #000;
+}
+.sc-project.sub .item img:hover{
+    transform: scale(1);
+    filter: opacity(.5);
+}
+.sc-project.sub .item .title{
+    margin: 0 10px;
+    margin-top: 40px;
+    font-size: 22px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-project.sub .item svg{
+    width: 22px;
+    transition: .3s;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-.sc-project .content .sub-area svg,.sc-project .box svg{
-    width: 14px;
+.sc-project.sub .item path{
+    fill: #fff;
+}
+.sc-project.sub .item svg:hover{
+    width: 24px;
+}
+.sc-project.sub .item svg:hover path{
+    fill: #e0fd60;
 }
 .sc-project .content .sub-area svg path,.sc-project .box svg path{stroke: #fff;}
-.sc-project .content .item:hover .link::before{
-    opacity: 1;
-}
-.sc-project .content .item:hover .title,
-.sc-project .content .item:hover .sub-area{
-    transform: translateY(0%);
-}
+.sc-project .content .sub-area svg,.sc-project .box svg{ width: 14px; }
 
 
 
 /* sc-plan */
-
 .sc-plan{
     padding: 100px 5vw;
 }
@@ -332,4 +309,87 @@
 }
 .sc-plan .title-area p{
     font-size: 28px;
+}
+
+
+/* sc-contact */
+.sc-contact{
+    overflow: hidden;
+}
+.sc-contact .title-area .wrap{
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+.sc-contact .title-area .font{
+    font-family: "Gallery Modern",sans-serif;
+    text-transform: capitalize;
+    letter-spacing: -.02em;
+    font-size: 10vw;
+    margin-bottom: 100px;
+}
+.sc-contact .title-area small{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.sc-contact .title-area .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sc-contact .contact-content a:first-child{
+    border-top: 1px solid rgb(237, 237, 237,.2);
+}
+.sc-contact .contact-content a:last-child{
+    margin-bottom: 10vw;
+}
+.sc-contact .contact-content .out-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-contact .contact-content .in-title{
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: #e0fd60;
+    color: #000;
+    pointer-events: none;
+    touch-action: none;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+.sc-contact .contact-content .in-title .arrow line{
+    stroke: #000;
+}
+.sc-contact .contact-content a{
+    border-bottom: 1px solid rgb(237, 237, 237,.2);
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 50px 5vw;
+
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.sc-contact .insta .swiper-slide{width: 323px;}
+.sc-contact .github .swiper-slide{width: 255px;}
+.sc-contact .velog .swiper-slide{width: 244px;}
+.sc-contact .email .swiper-slide{width: 241px;}
+.sc-contact .tel .swiper-slide{width: 248px;}
+
+.in-title .swiper-slide{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.sc-contact .contact-content ul{ transition-timing-function: linear; }
+.sc-contact .contact-content .arrow svg{
+    width: 30px; height: 30px;
+}
+.sc-contact .contact-content .arrow line{
+    stroke: #fff;
 }

@@ -32,8 +32,6 @@ $('.scroll-move').click(function(e){
 
 
 
-
-
 //sc-visual
 const visualtl = gsap.timeline({
     scrollTrigger:{
@@ -44,23 +42,23 @@ const visualtl = gsap.timeline({
         // markers:true,
     },
 });
-visualtl
-    .fromTo('.sc-visual .img1',{rotate:-15},{rotate:15,duration:0.1},"a")
-    .fromTo('.sc-visual .img2',{rotate:-85},{rotate:0,duration:0.1},"a")
-    .fromTo('.sc-visual .img3',{rotate:0},{rotate:30,duration:0.1},"a")
-    .fromTo('.sc-visual .img4',{rotate:15},{rotate:-15,duration:0.1},"a+=0.1")
+// visualtl
+//     .fromTo('.sc-visual .img1',{rotate:-15},{rotate:15,duration:0.1},"a")
+//     .fromTo('.sc-visual .img2',{rotate:-85},{rotate:0,duration:0.1},"a")
+//     .fromTo('.sc-visual .img3',{rotate:0},{rotate:30,duration:0.1},"a")
+//     .fromTo('.sc-visual .img4',{rotate:15},{rotate:-15,duration:0.1},"a+=0.1")
 
 
-//lenis - 조금 더 gsap을 부들거리게 해줌
-const lenis = new Lenis()
+// //lenis - 조금 더 gsap을 부들거리게 해줌
+// const lenis = new Lenis()
 
-lenis.on('scroll', ScrollTrigger.update)
+// lenis.on('scroll', ScrollTrigger.update)
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 2000)
-})
+// gsap.ticker.add((time)=>{
+//   lenis.raf(time * 2000)
+// })
 
-gsap.ticker.lagSmoothing(0)
+// gsap.ticker.lagSmoothing(0)
 
 //sc-content1
 gsap.to('.sc-content1 .area-wrap',{//움직일대상
@@ -169,3 +167,28 @@ $('.footer a p').click(function(e){
     e.preventDefault();
     window.scrollTo({top:0,behavior:'smooth'})
 })
+
+var swiper1 = new Swiper(".in-title",{
+    slidesPerView:'auto',
+    spaceBetween:100,
+    speed:5000,
+    loop:true,
+    autoplay:{
+        delay:0,
+        disableOnInteraction:false
+    },
+})
+
+
+// $('.sc-contact .contact-content a').each(function(){})
+$('.out-title').mouseenter(function(){
+    $(this).siblings().css({opacity:1})
+    // $(this).siblings().css({transform: "scaleY(1)"})
+    // $(this).css({opacity:0})
+})
+$('.out-title').mouseleave(function(){
+    $(this).siblings().css({opacity:0})
+    // $(this).siblings().css({transform: "scaleY(0)"})
+    // $(this).css({opacity:1})
+})
+// $('.out-title').each(function(){})

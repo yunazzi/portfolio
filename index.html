@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -111,13 +112,10 @@
 
                 <div class="item">
                     <div class="thumb-box">
-                        <!-- 우아한 형제들(공통프로젝트), sign-cms, 위즈위드, archipelago productions <br>
-                        목업사이트에서 노트북같은거 활용해서 미리보여주기식으로 보여주는것도 좋음
-                        -> 4개정도 **이게 중요한 포인트! -->
                         <img src="https://seona-cha.github.io/portfolio/assets/images/oliveyoung-pc.jpg" alt>
                         <div class="text-box">
                             <div class="title">
-                                <em>01</em>WIZWID <span>(MOBILE)</span>
+                                <em>01</em>ARCHIPELAGO PRODUCTIONS <span>(PC)</span>
                             </div>
                         </div>
                     </div>
@@ -132,20 +130,25 @@
                                 <div class="desc">
                                     <!-- 이프로젝트를 한 이유에 대해
                                     이러한 부분을 보여주기위해 프로젝트를 함 -->
-                                    다양한 swiper slide와 탭메뉴를 구현하는 쇼핑몰을 클론코딩하며 스킬업하고자 <br>
-                                    위즈위드를 선택했고, 새로고침을 할때 상단 gnb메뉴가 없어지는 문제, 상품 탭메뉴가 <br>
-                                    정상작동 되지 않는 문제와 상품 영역 링크 개별처리를 하는 문제점들을 개선하고자 했습니다.
+
+                                    탭메뉴와 스크롤이벤트, sticky가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, scrollTrigger에 <br>
+                                    onEnter 와 onLeaveBack기능을 넣어 특정구간에 도달하거나 벗어나면 배경색상이 바뀌게끔 구현했습니다. <br>
+                                    또한, 솔루션 API사이트인 구글클라우드의 영상과 글귀들의 특징을 입혀 리뉴얼했습니다.
+
+                                    <!-- 탭메뉴와 스크롤이벤트가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, <br>
+                                    기존사이트에 동영상과 이미지가 많은 OTT사이트인 넷플릭스의 특징을 입혀 리뉴얼하고자 했습니다. -->
+                                    <!-- 넷플릭스,네이버 커리어 참고 -->
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="title">skill</div>
                                 <div class="tags">
-                                    <span class="tag-item">mobile</span>
+                                    <span class="tag-item">PC</span>
                                     <span class="tag-item">Adaptive</span>
                                     <span class="tag-item">Semantic Web</span>
+                                    <span class="tag-item">renewal</span>
                                     <span class="tag-item">JQuery</span>
                                     <span class="tag-item">Javascript</span>
-                                    <span class="tag-item">tab menu</span>
                                     <span class="tag-item">gsap</span>
                                     <span class="tag-item">swiper</span>
                                     <span class="tag-item">JSON</span>
@@ -156,7 +159,7 @@
                         <div class="link">
                             <h3 class="blind">link</h3>
                             <div class="tags links">
-                                <a href="https://yunazzi.github.io/wizwid/" class="btn-link">
+                                <a href="https://yunazzi.github.io/Google-Cloud/" target="_blank" class="btn-link">
                                     VIEW SITE
                                     <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                 </a>
@@ -210,7 +213,7 @@
                         <div class="link">
                             <h3 class="blind">link</h3>
                             <div class="tags links">
-                                <a href="" class="btn-link">
+                                <a href="https://yunazzi.github.io/sign-cms/" target="_blank" class="btn-link">
                                     VIEW SITE
                                     <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                 </a>
@@ -225,10 +228,13 @@
 
                 <div class="item">
                     <div class="thumb-box">
+                        <!-- 우아한 형제들(공통프로젝트), sign-cms, 위즈위드, archipelago productions <br>
+                        목업사이트에서 노트북같은거 활용해서 미리보여주기식으로 보여주는것도 좋음
+                        -> 4개정도 **이게 중요한 포인트! -->
                         <img src="https://seona-cha.github.io/portfolio/assets/images/oliveyoung-pc.jpg" alt>
                         <div class="text-box">
                             <div class="title">
-                                <em>03</em>ARCHIPELAGO PRODUCTIONS <span>(PC)</span>
+                                <em>03</em>WIZWID <span>(MOBILE)</span>
                             </div>
                         </div>
                     </div>
@@ -243,25 +249,20 @@
                                 <div class="desc">
                                     <!-- 이프로젝트를 한 이유에 대해
                                     이러한 부분을 보여주기위해 프로젝트를 함 -->
-
-                                    탭메뉴와 스크롤이벤트, sticky가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, scrollTrigger에 <br>
-                                    onEnter 와 onLeaveBack기능을 넣어 특정구간에 도달하거나 벗어나면 배경색상이 바뀌게끔 구현했습니다. <br>
-                                    또한, 솔루션 API사이트인 구글클라우드의 영상과 글귀들의 특징을 입혀 리뉴얼했습니다.
-
-                                    <!-- 탭메뉴와 스크롤이벤트가 구현되어있는 역동적인 사이트를 클론코딩하고자 했고, <br>
-                                    기존사이트에 동영상과 이미지가 많은 OTT사이트인 넷플릭스의 특징을 입혀 리뉴얼하고자 했습니다. -->
-                                    <!-- 넷플릭스,네이버 커리어 참고 -->
+                                    다양한 swiper slide와 탭메뉴를 구현하는 쇼핑몰을 클론코딩하며 스킬업하고자 <br>
+                                    위즈위드를 선택했고, 새로고침을 할때 상단 gnb메뉴가 없어지는 문제, 상품 탭메뉴가 <br>
+                                    정상작동 되지 않는 문제와 상품 영역 링크 개별처리를 하는 문제점들을 개선하고자 했습니다.
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="title">skill</div>
                                 <div class="tags">
-                                    <span class="tag-item">PC</span>
+                                    <span class="tag-item">mobile</span>
                                     <span class="tag-item">Adaptive</span>
                                     <span class="tag-item">Semantic Web</span>
-                                    <span class="tag-item">renewal</span>
                                     <span class="tag-item">JQuery</span>
                                     <span class="tag-item">Javascript</span>
+                                    <span class="tag-item">tab menu</span>
                                     <span class="tag-item">gsap</span>
                                     <span class="tag-item">swiper</span>
                                     <span class="tag-item">JSON</span>
@@ -272,7 +273,7 @@
                         <div class="link">
                             <h3 class="blind">link</h3>
                             <div class="tags links">
-                                <a href="" class="btn-link">
+                                <a href="https://yunazzi.github.io/wizwid/" target="_blank" class="btn-link">
                                     VIEW SITE
                                     <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                 </a>
@@ -284,6 +285,10 @@
                         </div>
                     </div>
                 </div>
+
+                
+
+                
 
             </section>
 
@@ -297,102 +302,93 @@
                 </div>
                 
                 <div class="content">
+
+
+                    <!-- 
+                        https://cdn.cuberto.com/cb/hello/postcard/1@2x.jpg
+                        https://cdn.cuberto.com/cb/hello/postcard/2@2x.jpg
+                        https://cdn.cuberto.com/cb/hello/postcard/3@2x.jpg
+                        https://cdn.cuberto.com/cb/hello/postcard/4@2x.jpg
+                    -->
                     <div class="item">
-                        <a href="" class="link">
+                        <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
                             <div class="thumb-box">
-                                <img src="https://cdn.cuberto.com/cb/hello/postcard/1@2x.jpg" alt>
+                                <img src="./assets/images/배민.png" alt>
                             </div>
                             <div class="title">
-                                <span class="sub">PC</span>
-                                <h3>NAVER</h3>
+                                <h3>woowahan Bros - PC</h3>
+                                <a href="" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
                             </div>
                         </a>
-
-                        <div class="sub-area">
-                            <a href="" class="btn-link">
-                                VIEW SITE
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                            <a href="" class="btn-link">
-                                CODE REVIEW
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                        </div>
-
                     </div>
-                    <div class="item">
+
+                    <!-- <div class="item">
                         <a href="" class="link">
                             <div class="thumb-box">
-                                <img src="https://cdn.cuberto.com/cb/hello/postcard/2@2x.jpg" alt>
+                                <img src="./assets/images/배민2.png" alt>
                             </div>
                             <div class="title">
-                                <span class="sub">PC</span>
-                                <h3>SEOUL CITY</h3>
+                                <h3>woowahan Bros - mobile</h3>
+                                <svg width="24" height="24" viewBox="0 0 192 192">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                </svg>
                             </div>
                         </a>
+                    </div> -->
 
-                        <div class="sub-area">
-                            <a href="" class="btn-link">
-                                VIEW SITE
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                            <a href="" class="btn-link">
-                                CODE REVIEW
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                        </div>
-
+                    <div class="item">
+                        <a href="https://yunazzi.github.io/andar/" class="link" target="_blank">
+                            <div class="thumb-box">
+                                <img src="./assets/images/안다르.png" alt>
+                            </div>
+                            <div class="title">
+                                <h3>andar - mobile</h3>
+                                <a href="" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </a>
                     </div>
+
+                    <!-- <div class="item">
+                        <a href="https://yunazzi.github.io/seoul/" class="link" target="_blank">
+                            <div class="thumb-box">
+                                <img src="./assets/images/seoul city.png" alt>
+                            </div>
+                            <div class="title">
+                                <h3>seoul city - PC</h3>
+                                <a href="" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </a>
+                    </div> -->
                     <div class="item">
                         <a href="" class="link">
                             <div class="thumb-box">
-                                <img src="https://cdn.cuberto.com/cb/hello/postcard/3@2x.jpg" alt>
+                                <img src="" alt>
                             </div>
                             <div class="title">
-                                <span class="sub">PC</span>
-                                <h3>ANDAR</h3>
+                                <h3>naver - PC</h3>
+                                <a href="" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
                             </div>
                         </a>
-
-                        <div class="sub-area">
-                            <a href="" class="btn-link">
-                                VIEW SITE
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                            <a href="" class="btn-link">
-                                CODE REVIEW
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <a href="" class="link">
-                            <div class="thumb-box">
-                                <img src="https://cdn.cuberto.com/cb/hello/postcard/4@2x.jpg" alt>
-                            </div>
-                            <div class="title">
-                                <span class="sub">PC</span>
-                                <h3>WOOWAHAN</h3>
-                            </div>
-                        </a>
-
-                        <div class="sub-area">
-                            <a href="" class="btn-link">
-                                VIEW SITE
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                            <a href="" class="btn-link">
-                                CODE REVIEW
-                                <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                            </a>
-                        </div>
 
                     </div>
                 </div>
             </section>
-
-            <!-- https://cdn.cuberto.com/cb/hello/postcard/1@2x.jpg -->
 
             <section class="sc-plan" id="sc-plan">
 
@@ -405,12 +401,728 @@
                     <ul>
                         기업의 지원자격이랑 우대사항 참고해서 작성
                         (하이브랩, 이지미디어)
-                        <img src="../../../../yunazzi/Desktop/스크린샷 2023-12-23 오후 8.37.37.png" alt="">
+                        <!-- <img src="../../../../yunazzi/Desktop/스크린샷 2023-12-23 오후 8.37.37.png" alt=""> -->
                         구체화된 지식에 대해서 공부하겠다는 걸 보여주기 + 내용 더 쓰기
                     </ul>
                 </div>
             </section>
 
+            <section class="sc-contact">
+                <div class="title-area">
+                    <h2 class="wrap">
+                        <em class="font">contact</em>
+                        <small class="sm-con">social media and contacts</small>
+                    </h2>
+                    <div class="contact-content">
+                        <a href="" target="_blank" class="insta">
+                            <div class="out-title">
+                                <div class="title">instagram</div>
+                                <div class="arrow">
+                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <g>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                            </g>
+                                            <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="in-title swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none; stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">instagram</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://github.com/yunazzi" target="_blank" class="github">
+                            <div class="out-title">
+                                <div class="title">github</div>
+                                <div class="arrow">
+                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <g>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                            </g>
+                                            <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="in-title swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none; stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">github</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="https://velog.io/@yunazzi/posts" target="_blank" class="velog">
+                            <div class="out-title">
+                                <div class="title">velog</div>
+                                <div class="arrow">
+                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <g>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                            </g>
+                                            <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="in-title swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none; stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">velog</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="mailto:dbskgurwls@naver.com" class="email">
+                            <div class="out-title">
+                                <div class="title">e-mail</div>
+                                <div class="arrow">
+                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <g>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                            </g>
+                                            <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="in-title swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none; stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">e-mail</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="tel:+8210-3056-6876" class="tel">
+                            <div class="out-title">
+                                <div class="title">phone</div>
+                                <div class="arrow">
+                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                    <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <g>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                            <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                            </g>
+                                            <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="in-title swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none; stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none; stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="title">phone</div>
+                                        <div class="arrow">
+                                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                            <svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g>
+                                                    <g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
+                                                    <line style="fill:none ;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
+                                                    </g>
+                                                    <line style="fill:none ;stroke-width:12;stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
 
             
         </main>
@@ -438,12 +1150,8 @@
                 </button>
             </div>
         </div>
-        <!-- <button class="btn-gotop">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18385 10.3818C5.92996 10.1076 5.9403 9.67351 6.20695 9.41237L11.5403 4.18911C11.7977 3.93696 12.2023 3.93696 12.4597 4.18911L17.793 9.41237C18.0597 9.67351 18.07 10.1076 17.8161 10.3818C17.5623 10.6561 17.1403 10.6667 16.8736 10.4056L12.6667 6.28545L12.6667 19.3143C12.6667 19.693 12.3682 20 12 20C11.6318 20 11.3333 19.693 11.3333 19.3143L11.3333 6.28545L7.12638 10.4056C6.85973 10.6667 6.43775 10.6561 6.18385 10.3818Z" fill="#020202"/>
-            </svg>
-        </button> -->
         
+
     </div>
 </body>
 </html>
