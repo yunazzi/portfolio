@@ -226,14 +226,19 @@
 
 
 /* sc-project sub */
-
-.sc-project{
-    /* 쩌리프로젝트니 한행을 차지하게 하지말고 간단하게 만들기 */
+.sc-project.sub{
+    background: #fff;
+    color: #000;
 }
-.sc-project.sub .content{
+.sc-project.sub .content ul{
     display: flex;
     align-items: flex-end;
-    gap: 2.5vw;
+}
+.sc-project.sub .content li:nth-child(odd){
+    width: 597px;
+}
+.sc-project.sub .content li:nth-child(even){
+    width: 394px;
 }
 .sc-project.sub .thumb-box{
     width: 33vw;
@@ -272,7 +277,7 @@
     align-items: center;
 }
 .sc-project.sub .item path{
-    fill: #fff;
+    fill: #000;
 }
 .sc-project.sub .item svg:hover{
     width: 24px;

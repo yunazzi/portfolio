@@ -1,23 +1,38 @@
-//새로고침되자마자 스크롤이벤트 실행하게끔 실행
-$(window).trigger('scroll');
-
 //gnb
 $('.scroll-move').click(function(e){
     e.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top})
+    //offset().top -> 해당요소의 맨위
+    //scrollTop 스크롤바 수직위치(값)
+
+    
+
+    
+    // 해당섹션에 갔을때, on클래스가 있고, 해당섹션에 벗어나면 on클래스가 없고
 })
 
-$('.section').each(function(i,el){
-    ScrollTrigger.create({
-        trigger:el,
-        start:"0% 50%",
-        end:"100% 50%",
-        toggleClass:{
-            targets:$('.header .gnb li').eq(el.dataset.idx),
-            className:"on"
-        }
-    })
-})
+
+// $(window).on('scroll', function() {
+//     let currentPosition = $(this).scrollTop();
+//     // 섹션 위치값 비교
+
+//     $('section').each(function() {
+//       let top = $(this).offset().top - 150; // 
+//       let bottom = top + $(this).outerHeight();
+
+//       if (currentPosition >= top && currentPosition <= bottom) {
+//         let sectionId = $(this).attr('id');
+//         $('.gnb li').removeClass('on');
+//         $('.gnb li').find('a[href="#' + sectionId + '"]').parent().addClass('on');
+//       }
+//     });
+//   });
+
+
+
+
+
+
 
 //sc-visual
 const visualtl = gsap.timeline({
@@ -26,15 +41,34 @@ const visualtl = gsap.timeline({
         start:"top top",
         end:'100% 10%',
         scrub:1,
+        // markers:true,
     },
 });
+visualtl
+    .fromTo('.sc-visual .img1',{rotate:-15},{rotate:15,duration:0.1},"a")
+    .fromTo('.sc-visual .img2',{rotate:-85},{rotate:0,duration:0.1},"a")
+    .fromTo('.sc-visual .img3',{rotate:0},{rotate:30,duration:0.1},"a")
+    .fromTo('.sc-visual .img4',{rotate:15},{rotate:-15,duration:0.1},"a+=0.1")
+
+
+//lenis - 조금 더 gsap을 부들거리게 해줌
+const lenis = new Lenis()
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 2000)
+})
+
+gsap.ticker.lagSmoothing(0)
 
 //sc-content1
-gsap.to('.sc-content1 .area-wrap',{
+gsap.to('.sc-content1 .area-wrap',{//움직일대상
     scrollTrigger:{
-        trigger:'.sc-content1 .area1',
+        trigger:'.sc-content1 .area1',//기준
         start:'0% 100%',
         end:'100% 0%',
+        // markers:true,
         scrub:0
     },
     xPercent:-100
@@ -59,31 +93,6 @@ $('.sc-project .content .sub-area a').hover(function(){
 })
 
 
-var swiper1 = new Swiper(".in-title",{
-    slidesPerView:'auto',
-    spaceBetween:100,
-    speed:5000,
-    loop:true,
-    autoplay:{
-        delay:0,
-        disableOnInteraction:false
-    },
-})
-
-
-$('.out-title').mouseenter(function(){
-    $(this).siblings().css({opacity:1})
-})
-$('.out-title').mouseleave(function(){
-    $(this).siblings().css({opacity:0})
-})
-
-
-var swiper2 = new Swiper('.content',{
-    slidesPerView:'auto',
-    spaceBetween:30,
-})
-
 
 let lastScrollTop = 0;
 let isFlowslideActive = true;
@@ -104,6 +113,40 @@ $(window).scroll(function(){
 
     lastScrollTop = curr;
 })
+$('.circle').click(function(){
+    window.scrollTo({top:0,behavior:'smooth'})
+})
+
+// $('.circle').hover(function(){
+
+// })
+
+
+
+
+
+// $('.sc-visual img').each(function(i,el){
+//     gsap.to($(this),{
+//         scrollTrigger:{
+//             trigger:$(this),
+//             start:'0% 100%',
+//             end:'100% 0%'
+//         },
+//         rotate:10,
+//         rotate:5
+//     })
+// })
+
+gsap.to('.bar',{
+    scrollTrigger:{
+        trigger:".container",
+        start:"0% 0%",
+        end:"100% 100%",
+        // markers:true,
+        scrub:0
+    },
+    "stroke-dashoffset": 0
+})
 
 $('.btn-gotop').hover(function(){
     $('.btn-gotop').css({opacity:1})
@@ -112,20 +155,7 @@ $('.btn-gotop').hover(function(){
 })
 
 
-$('.circle').click(function(){
-    window.scrollTo({top:0,behavior:'smooth'})
-})
 
-
-gsap.to('.bar',{
-    scrollTrigger:{
-        trigger:".container",
-        start:"0% 0%",
-        end:"100% 100%",
-        scrub:0
-    },
-    "stroke-dashoffset": 0
-})
 
 
 $('.footer a p').mouseenter(function(){
