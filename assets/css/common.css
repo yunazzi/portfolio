@@ -1,78 +1,16 @@
-.blind{
-    margin: -1px;
-    clip: rect(0,0,0,0);
-    position: absolute;
-    width: 1px; height: 1px;
-    overflow: hidden;
-}
+.blind{ margin: -1px; clip: rect(0,0,0,0); position: absolute; width: 1px; height: 1px; overflow: hidden; }
 
-.inner{
-    max-width: 1920px;
-    padding: 0 5vw;
-    margin: 0 auto;
-}
+.inner{ max-width: 1920px; padding: 0 5vw; margin: 0 auto; }
 
 
 /* 깜빡거리는효과 */
-@keyframes blink-effect{
-    50%{
-        opacity: 0;
-    }
-}
-.blink{
-    animation: blink-effect 1s step-end infinite;
-}
-
-/* .btn-gotop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    position: fixed;
-    bottom: 56px; right: 48px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    width: 40px; height: 40px;
-}
-.btn-gotop svg{
-    background: #000;
-    border-radius: 16px;
-    width: 32px; height: 32px;
-}
-.btn-gotop svg path{
-    fill: #fff;
-} */
-.circle{
-    position: fixed;
-    width: 40px; height: 40px;
-    bottom: 56px; right: 48px;
-    z-index: 99;
-    transition: .3s;
-    /* overflow: hidden; */
-}
-.circle_progress_wrap {
-  position: relative;
-}
+@keyframes blink-effect{ 50%{ opacity: 0; } }
+.blink{ animation: blink-effect 1s step-end infinite; }
+.circle{ position: fixed; width: 40px; height: 40px; bottom: 56px; right: 48px; z-index: 99; transition: .3s; }
+.circle_progress_wrap { position: relative; }
 .circle_progress { transform: rotate(-90deg); }
 .frame, .bar { fill: none; }
 .frame { stroke: rgba(255,255,255,0.5); }
-.bar {
-	stroke: #fff;
-	stroke-linecap: round;
-    stroke-dasharray: 339.292;
-    stroke-dashoffset: 339.292;
-}
-.btn-gotop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    position: fixed;
-    bottom: 56px; right: 48px;
-    border-radius: 50%;
-    width: 40px; height: 40px;
-    opacity: 0;
-}
-.btn-gotop svg path{
-    fill: #fff;
-}
+.bar { stroke: #fff; stroke-linecap: round; stroke-dasharray: 339.292; stroke-dashoffset: 339.292; }
+.btn-gotop{ display: flex; align-items: center; justify-content: center; position: fixed; bottom: 56px; right: 48px; border-radius: 50%; width: 40px; height: 40px; opacity: 0; }
+.btn-gotop svg path{ fill: #fff; }
