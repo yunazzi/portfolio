@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha512-ahmSZKApTDNd3gVuqL5TQ3MBTj8tL5p2tYV05Xxzcfu6/ecvt1A0j6tfudSGBVuteSoTRMqMljbfdU0g2eDNUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
@@ -18,6 +18,48 @@
     <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
+    <aside>
+        <div class="gnb-area gnb">
+            <h2 class="blind">확장메뉴</h2>
+            <div class="dimmed"></div>
+
+            <div class="nav-wrapper">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#sc-visual" class="nav">
+                            <span>intro</span>
+                            <span>intro</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sc-content" class="nav">
+                            <span>about</span>
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sc-project" class="nav">
+                            <span>projects</span>
+                            <span>projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sc-contact" class="nav">
+                            <span>contacts</span>
+                            <span>contacts</span>
+                        </a>
+                    </li>
+                    <address>
+                        <p>
+                            Get in touch <br>
+                            <a href="mailto:dbskgurwls@naver.com"><span>dbskgurwls@naver.com</span></a>
+                        </p>
+                    </address>
+                </ul>
+            </div>
+            
+        </div>
+    </aside>
     <div class="wrapper">
         <header class="header">
             <h1 class="logo">
@@ -25,34 +67,37 @@
                     <span class="headline">u-na</span>
                 </a>
             </h1>
-            <nav class="gnb">
-                <ul>
-                    <li class="on"><a href="#sc-visual" class="scroll-move">INTRO</a></li>
-                    <li><a href="#sc-project" class="scroll-move">PROJECT</a></li>
-                    <li><a href="#sc-plan" class="scroll-move">CONTACT</a></li>
-                </ul>
-            </nav>
 
-            <button class="btn-menu">
-                <span class="blind">확장메뉴</span>
+            <button class="btn-menu close">
+                <span></span>
+                <span></span>
             </button>
+
+            
         </header>
 
         <main class="container">
-            <section class="section sc-visual" id="sc-visual" data-idx="0">
+            <section class="section sc-visual" id="sc-visual">
                 <div class="wrap">
                     <em>I
-                        <span class="box">
-                            <span data-text="create">CREATE</span>
-                            <span data-text="create">CREATE</span>
-                        </span> 
+                        <div class="box-wrapper">
+                            <span class="box-line"></span>
+                            <span class="box-span">
+                                <span>CREATE</span>
+                                <span>CREATE</span>
+                            </span>
+                        </div> 
                     </em>
                     <em>MEMORABLE</em>
                     <em><span class="blink">_</span>WORKS</em>
                 </div>
+                <div class="visual-details">
+                    <div class="visual-detail">© 2024</div>
+                    <div class="visual-detail">(scroll)</div>
+                </div>
             </section>
 
-            <section class="sc-content1">
+            <section class="sc-content" id="sc-content">
                 <div class="content-wrap">
                     <div class="area1">
                         <ul class="area-wrap">
@@ -84,254 +129,307 @@
                         <div class="grid">
                             <div class="grid-right">
                                 <div class="title">About me</div>
-                                <p class="desc">
-                                    <span class="font">"Just do it!"</span> 좋아하는 일을 위해 더 나아가고자 항상 노력합니다. <br>
-                                    시멘틱태그를 활용한 마크업으로 뼈대가 탄탄하고 명확한 웹구조로 <br>
-                                    프로덕트가 사용자들의 기억에 남는 일을 하고 싶습니다. <br>
-                                </p>
+                                <div class="desc">
+                                    <div><span class="font">"Just do it!"</span> 좋아하는 일을 위해 더 나아가고자 항상 노력합니다. </div>
+                                    <div>시멘틱태그를 활용한 마크업으로 뼈대가 탄탄하고 명확한 웹구조로 </div>
+                                    <div>프로덕트가 사용자들의 기억에 남는 일을 하고 싶습니다. </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="section" data-idx="1">
-                <section class="sc-project main" id="sc-project">
-                    <div class="title">
-                        <h2 class="wrap">
-                            <em class="font">main</em> <br>
-                            <em>project<span class="blink">_</span></em>
-                        </h2>
+            <section class="sc-project main" id="sc-project">
+                <h2 class="main-title">
+                    <em class="font">main</em> <br>
+                    <em>project<span class="blink">_</span></em>
+                </h2>
+                <div class="area area1">
+                    <div class="thumb-box">
+                        <video autoplay loop muted>
+                            <source src="./assets/images/Google Cloud_ The new way to cloud.mp4">
+                        </video>
                     </div>
-                    <div class="item">
-                        <div class="thumb-box">
-                            <img src="./assets/images/google.png" alt>
+                    <div class="con-area">
+                        <div class="title">
+                            <em>01</em>Google Cloud <span>(PC)</span>
                         </div>
-                        <div class="con-area">
-                            <div class="title">
-                                <em>01</em>Google Cloud <span>(PC)</span>
-                            </div>
-                            <div class="line"></div>
-                            
-                            <div class="desc-wrap">
-                                <div class="box">
-                                    <div class="desc">
-                                        Google Cloud를 테마로 archipelago productions, google등 래퍼런스 사이트를 참고하여 리뉴얼한 PC적응형 사이트입니다.
-                                    </div>
-                                    <div class="tags">
-                                        <span>#PC</span>
-                                        <span>#Adaptive</span>
-                                        <span>#Semantic Web</span>
-                                        <span>#renewal</span>
-                                        <span>#JQuery</span>
-                                        <span>#Javascript</span>
-                                        <span>#gsap</span>
-                                        <span>#swiper</span>
-                                    </div>
+                        <div class="line"></div>
+            
+                        <div class="desc-wrap">
+                            <div class="box">
+                                <div class="desc">
+                                    Google Cloud를 테마로 archipelago productions, google등 래퍼런스 사이트를 참고하여 리뉴얼한 PC적응형 사이트입니다.
                                 </div>
+                                <div class="tags">
+                                    <span>#PC</span>
+                                    <span>#Adaptive</span>
+                                    <span>#Semantic Web</span>
+                                    <span>#renewal</span>
+                                    <span>#JQuery</span>
+                                    <span>#Javascript</span>
+                                    <span>#GSAP</span>
+                                    <span>#swiper</span>
+                                </div>
+                            </div>
+                            <div class="link">
+                                <h3 class="blind">link</h3>
+                                <div class="tags links">
+                                    <a href="https://yunazzi.github.io/Google-Cloud/" target="_blank" class="btn-link">
+                                        VIEW SITE
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                    <a href="https://velog.io/@yunazzi/Google-Cloud" class="btn-link" target="_blank">
+                                        CODE REVIEW
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area area2">
+                    <div class="thumb-box">
+                        <video autoplay loop muted>
+                            <source src="./assets/images/sign-cms.mp4">
+                        </video>
+                    </div>
+                    <div class="con-area">
+                        <div class="title">
+                            <em>02</em>SIGN-CMS <span>(PC)</span>
+                        </div>
+                        <div class="line"></div>
+            
+                        <div class="desc-wrap">
+                            <div class="box">
+                                <div class="desc">
+                                    Sign-cms를 클론코딩한 PC 반응형 사이트이며, 자바스크립트 라이브러리인 Swiper, GSAP을 이용해 구현한 사이트입니다.
+                                </div>
+                                <div class="tags">
+                                    <span>#PC</span>
+                                    <span>#semi-Responsive</span>
+                                    <span>#Semantic Web</span>
+                                    <span>#grid</span>
+                                    <span>#JQuery</span>
+                                    <span>#Javascript</span>
+                                    <span>#GSAP</span>
+                                    <span>#swiper</span>
+                                </div>
+                            </div>
+                            <div class="link">
+                                <h3 class="blind">link</h3>
+                                <div class="tags links">
+                                    <a href="https://yunazzi.github.io/sign-cms/" target="_blank" class="btn-link">
+                                        VIEW SITE
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                    <a href="https://velog.io/@yunazzi/sign-cms" target="_blank" class="btn-link">
+                                        CODE REVIEW
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area area3">
+                    <div class="thumb-box">
+                        <video autoplay loop muted>
+                            <source src="./assets/images/m-wizwid.mp4">
+                        </video>
+                    </div>
+                    <div class="con-area">
+                        <div class="title">
+                            <em>03</em>WIZWID <span>(MOBILE)</span>
+                        </div>
+                        <div class="line"></div>
+            
+                        <div class="desc-wrap">
+                            <div class="box">
+                                <div class="desc">
+                                    위즈위드를 클론코딩한 모바일 사이트이며, json을 이용해 직접 데이터를 담아두고 데이터 바인딩을 통해 컨텐츠와 메뉴를 불러오는 작업을 중점으로한 사이트입니다.
+                                </div>
+                                <div class="tags">
+                                    <span>#Mobile</span>
+                                    <span>#Adaptive</span>
+                                    <span>#Semantic Web</span>
+                                    <span>#JQuery</span>
+                                    <span>#Javascript</span>
+                                    <span>#Tab menu</span>
+                                    <span>#GSAP</span>
+                                    <span>#swiper</span>
+                                    <span>#JSON</span>
+                                </div>
+                            </div>
+                            <div class="link">
+                                <h3 class="blind">link</h3>
+                                <div class="tags links">
+                                    <a href="https://yunazzi.github.io/wizwid/" target="_blank" class="btn-link">
+                                        VIEW SITE
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                    <a href="https://velog.io/@yunazzi/WIZWID-Mobile-클론코딩" target="_blank" class="btn-link">
+                                        CODE REVIEW
+                                        <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                <div class="link">
-                                    <h3 class="blind">link</h3>
-                                    <div class="tags links">
-                                        <a href="https://yunazzi.github.io/Google-Cloud/" target="_blank" class="btn-link">
-                                            VIEW SITE
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                        <a href="https://velog.io/@yunazzi/Google-Cloud" class="btn-link" target="_blank">
-                                            CODE REVIEW
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                    </div>
+            <section class="sc-project sub">
+                <h2 class="main-title">
+                    <em class="font">Curriculum</em> <br>
+                    <em>project<span class="blink">_</span></em>
+                </h2>
+            
+                <div class="content swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="item swiper-slide">
+                            <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/media-woowahan.png" alt>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb-box">
-                            <img src="./assets/images/sign-cms.png" alt>
-                        </div>
-                        <div class="con-area">
+                            </a>
                             <div class="title">
-                                <em>02</em>SIGN-CMS <span>(PC)</span>
+                                <h3>woowahan Bros - media query</h3>
+                                <a href="https://velog.io/@yunazzi/우아한형제들-Media-Query" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="line"></div>
-                            
-                            <div class="desc-wrap">
-                                <div class="box">
-                                    <div class="desc">
-                                        Sign-cms를 클론코딩한 PC 반응형 사이트이며, 자바스크립트 라이브러리인 Swiper, GSAP을 이용해 구현한 사이트입니다.
-                                    </div>
-                                    <div class="tags">
-                                        <span>#PC</span>
-                                        <span>#semi-Responsive</span>
-                                        <span>#Semantic Web</span>
-                                        <span>#grid</span>
-                                        <span>#JQuery</span>
-                                        <span>#Javascript</span>
-                                        <span>#gsap</span>
-                                        <span>#swiper</span>
-                                    </div>
+                        </li>
+                        <li class="item swiper-slide">
+                            <a href="https://yunazzi.github.io/andar/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/mobile-andar.png" alt>
                                 </div>
-                                <div class="link">
-                                    <h3 class="blind">link</h3>
-                                    <div class="tags links">
-                                        <a href="https://yunazzi.github.io/sign-cms/" target="_blank" class="btn-link">
-                                            VIEW SITE
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                        <a href="https://velog.io/@yunazzi/sign-cms" target="_blank" class="btn-link">
-                                            CODE REVIEW
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb-box">
-                            <img src="./assets/images/wizwid.png" alt>
-                        </div>
-                        <div class="con-area">
+                            </a>
                             <div class="title">
-                                <em>03</em>WIZWID <span>(MOBILE)</span>
+                                <h3>andar - mobile</h3>
+                                <a href="https://velog.io/@yunazzi/ANDAR-Mobile-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="line"></div>
-                            
-                            <div class="desc-wrap">
-                                <div class="box">
-                                    <div class="desc">
-                                        위즈위드를 클론코딩한 모바일 사이트이며, json을 이용해 직접 데이터를 담아두고 데이터 바인딩을 통해 컨텐츠와 메뉴를 불러오는 작업을 중점으로한 사이트입니다.
-                                    </div>
-                                    <div class="tags">
-                                        <span>#mobile</span>
-                                        <span>#Adaptive</span>
-                                        <span>#Semantic Web</span>
-                                        <span>#JQuery</span>
-                                        <span>#Javascript</span>
-                                        <span>#tab menu</span>
-                                        <span>#gsap</span>
-                                        <span>#swiper</span>
-                                        <span>#JSON</span>                                       
-                                    </div>
+                        </li>
+                        <li class="item swiper-slide">
+                            <a href="https://yunazzi.github.io/seoul/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/pc-seoul.png" alt>
                                 </div>
-                                <div class="link">
-                                    <h3 class="blind">link</h3>
-                                    <div class="tags links">
-                                        <a href="https://yunazzi.github.io/wizwid/" target="_blank" class="btn-link">
-                                            VIEW SITE
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                        <a href="https://velog.io/@yunazzi/WIZWID-Mobile-클론코딩" target="_blank" class="btn-link">
-                                            CODE REVIEW
-                                            <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
-                                        </a>
-                                    </div>
-                                </div>
+                            </a>
+                            <div class="title">
+                                <h3>seoul city - PC</h3>
+                                <a href="" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                </section>
+                        </li>
+                        <li class="item swiper-slide">
+                            <a href="https://yunazzi.github.io/naver/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/pc-naver.png" alt>
+                                </div>
+                            </a>
+                            <div class="title">
+                                <h3>naver - PC</h3>
+                                <a href="https://velog.io/@yunazzi/네이버-PC-클론코딩" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination"></div>
+                </div>
 
-
-                <section class="sc-project sub">
-                    <div class="title">
-                        <h2 class="wrap">
-                            <em class="font">Curriculum</em> <br>
-                            <em>project<span class="blink">_</span></em>
-                        </h2>
-                    </div>
+                <div class="group-mobile">
+                    <ul>
+                        <li>
+                            <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <!-- <img src="./assets/images/m01.png" alt> -->
+                                    <img src="./assets/images/media-woowahan.png" alt>
+                                </div>
+                            </a>
+                            <div class="title">
+                                <h3>woowahan Bros - media query</h3>
+                                <a href="https://velog.io/@yunazzi/우아한형제들-Media-Query" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 192 192">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://yunazzi.github.io/andar/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <!-- <img src="./assets/images/m02.png" alt> -->
+                                    <img src="./assets/images/mobile-andar.png" alt>
+                                </div>
+                                <div class="title">
+                                    <h3>andar - mobile</h3>
+                                    <a href="https://velog.io/@yunazzi/ANDAR-Mobile-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank">
+                                        <svg width="20" height="20" viewBox="0 0 192 192">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://yunazzi.github.io/seoul/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <!-- <img src="./assets/images/m03.png" alt> -->
+                                    <img src="./assets/images/pc-seoul.png" alt>
+                                </div>
+                                <div class="title">
+                                    <h3>seoul city - PC</h3>
+                                    <a href="" target="_blank">
+                                        <svg width="20" height="20" viewBox="0 0 192 192">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://yunazzi.github.io/naver/" class="link" target="_blank">
+                                <div class="thumb-box">
+                                    <!-- <img src="./assets/images/m04.png" alt> -->
+                                    <img src="./assets/images/pc-naver.png" alt>
+                                </div>
+                                <div class="title">
+                                    <h3>naver - PC</h3>
+                                    <a href="https://velog.io/@yunazzi/네이버-PC-클론코딩" target="_blank">
+                                        <svg width="20" height="20" viewBox="0 0 192 192">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
                 
-                    <div class="content swiper">
-                        <ul class="swiper-wrapper">
-                            <li class="item swiper-slide">
-                                <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
-                                    <div class="thumb-box">
-                                        <img src="./assets/images/woowahan.png" alt>
-                                    </div>
-                                    <div class="title">
-                                        <h3>woowahan Bros - PC</h3>
-                                        <a href="https://velog.io/@yunazzi/우아한형제들-Media-Query" target="_blank">
-                                            <svg width="24" height="24" viewBox="0 0 192 192">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item swiper-slide">
-                                <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
-                                    <div class="thumb-box">
-                                        <img src="./assets/images/woowahan-m.png" alt>
-                                    </div>
-                                    <div class="title">
-                                        <h3>woowahan Bros - media query</h3>
-                                        <a href="https://velog.io/@yunazzi/우아한형제들-Media-Query" target="_blank">
-                                            <svg width="24" height="24" viewBox="0 0 192 192">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item swiper-slide">
-                                <a href="https://yunazzi.github.io/naver/" class="link" target="_blank">
-                                    <div class="thumb-box">
-                                        <img src="./assets/images/naver-mockup.png" alt>
-                                    </div>
-                                    <div class="title">
-                                        <h3>naver - PC</h3>
-                                        <a href="https://velog.io/@yunazzi/네이버-PC-클론코딩" target="_blank">
-                                            <svg width="24" height="24" viewBox="0 0 192 192">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item swiper-slide">
-                                <a href="https://yunazzi.github.io/andar/" class="link" target="_blank">
-                                    <div class="thumb-box">
-                                        <img src="./assets/images/andar.png" alt>
-                                    </div>
-                                    <div class="title">
-                                        <h3>andar - mobile</h3>
-                                        <a href="https://velog.io/@yunazzi/ANDAR-Mobile-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank">
-                                            <svg width="24" height="24" viewBox="0 0 192 192">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item swiper-slide">
-                                <a href="https://yunazzi.github.io/seoul/" class="link" target="_blank">
-                                    <div class="thumb-box">
-                                        <img src="./assets/images/seoul.png" alt>
-                                    </div>
-                                    <div class="title">
-                                        <h3>seoul city - PC</h3>
-                                        <a href="" target="_blank">
-                                            <svg width="24" height="24" viewBox="0 0 192 192">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <section class="section sc-contact" id="sc-contact" data-idx="2">
-                <div class="title-area">
+            <section class="section sc-contact" id="sc-contact">
+                <div class="contact-area">
                     <h2 class="wrap">
                         <em class="font">contact</em>
-                        <small class="sm-con">social media and contacts</small>
                     </h2>
                     <div class="contact-content">
+                        <small class="sm-con">social media and contacts</small>
+                        <div class="line"></div>
                         <a href="https://www.instagram.com/una_publish?igsh=d3dtd2k1OWV6OHJ2&utm_source=qr" target="_blank" class="insta">
                             <div class="out-title">
                                 <div class="title">instagram</div>
@@ -472,6 +570,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="con-line"></div>
                         </a>
                         <a href="https://github.com/yunazzi" target="_blank" class="github">
                             <div class="out-title">
@@ -613,6 +712,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="con-line"></div>
                         </a>
                         <a href="https://velog.io/@yunazzi/posts" target="_blank" class="velog">
                             <div class="out-title">
@@ -754,6 +854,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="con-line"></div>
                         </a>
                         <a href="mailto:dbskgurwls@naver.com" class="email">
                             <div class="out-title">
@@ -895,6 +996,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="con-line"></div>
                         </a>
                         <a href="tel:+8210-3056-6876" class="tel">
                             <div class="out-title">
@@ -1036,16 +1138,12 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="con-line"></div>
                         </a>
                         
                     </div>
                 </div>
             </section>
-
-            <section class="section sc-empty" id="sc-empty" data-idx="3">
-                <div class="blind">empty</div>
-            </section>
-            
         </main>
 
         <footer class="footer">
@@ -1054,15 +1152,15 @@
                 <img src="https://uploads-ssl.webflow.com/64647465ee6aa9f237f86105/64672984196d16b074a6553f_Direction%3DUp.svg" alt>
             </a>
             <small class="copyright">
-                © 2023 All Rights Reserved. Design & Developed by yuna kwon.
+                © 2023 All Rights Reserved. <br> Design & Developed by yuna kwon.
             </small>
         </footer>
 
         <div class="circle">
             <div class="circle_progress_wrap">
-                <svg class="circle_progress" width="40" height="40" viewBox="0 0 120 120">
-                  <circle class="frame" cx="60" cy="60" r="54" stroke-width="3" />
-                  <circle class="bar" cx="60" cy="60" r="54" stroke-width="4" />
+                <svg class="circle_progress" width="35" height="35" viewBox="0 0 120 120">
+                  <circle class="frame" cx="60" cy="60" r="54" stroke-width="4" />
+                  <circle class="bar" cx="60" cy="60" r="54" stroke-width="5" />
                 </svg>
                 <button class="btn-gotop">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1071,8 +1169,6 @@
                 </button>
             </div>
         </div>
-        
-
     </div>
 </body>
 </html>
