@@ -18,48 +18,8 @@
     <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
-    <aside>
-        <div class="gnb-area gnb">
-            <h2 class="blind">확장메뉴</h2>
-            <div class="dimmed"></div>
+    
 
-            <div class="nav-wrapper">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#sc-visual" class="nav">
-                            <span>intro</span>
-                            <span>intro</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sc-content" class="nav">
-                            <span>about</span>
-                            <span>about</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sc-project" class="nav">
-                            <span>projects</span>
-                            <span>projects</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sc-contact" class="nav">
-                            <span>contacts</span>
-                            <span>contacts</span>
-                        </a>
-                    </li>
-                    <address>
-                        <p>
-                            Get in touch <br>
-                            <a href="mailto:dbskgurwls@naver.com"><span>dbskgurwls@naver.com</span></a>
-                        </p>
-                    </address>
-                </ul>
-            </div>
-            
-        </div>
-    </aside>
     <div class="wrapper">
         <header class="header">
             <h1 class="logo">
@@ -68,19 +28,59 @@
                 </a>
             </h1>
 
-            <button class="btn-menu close">
+            <button class="gnb-toggle close">
                 <span></span>
                 <span></span>
             </button>
-
-            
         </header>
+        
+        <aside class="gnb-area">
+            <h2 class="blind">확장메뉴</h2>
+                <div class="dimmed"></div>
+    
+                <nav class="nav-wrap">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#sc-visual" class="nav">
+                                <span>intro</span>
+                                <span>intro</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sc-content" class="nav">
+                                <span>about</span>
+                                <span>about</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sc-project" class="nav">
+                                <span>projects</span>
+                                <span>projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sc-contact" class="nav">
+                                <span>contacts</span>
+                                <span>contacts</span>
+                            </a>
+                        </li>
+                        <address>
+                            <p>
+                                Get in touch <br>
+                                <a href="mailto:dbskgurwls@naver.com"><span>dbskgurwls@naver.com</span></a>
+                            </p>
+                        </address>
+                    </ul>
+                </nav>
+        </aside>
+
 
         <main class="container">
-            <section class="section sc-visual" id="sc-visual">
-                <div class="wrap">
+
+            <section class="sc-visual" id="sc-visual">
+                <div class="intro-area">
                     <em>I
-                        <div class="box-wrapper">
+                        <div class="box-wrap">
                             <span class="box-line"></span>
                             <span class="box-span">
                                 <span>CREATE</span>
@@ -91,16 +91,16 @@
                     <em>MEMORABLE</em>
                     <em><span class="blink">_</span>WORKS</em>
                 </div>
-                <div class="visual-details">
-                    <div class="visual-detail">© 2024</div>
-                    <div class="visual-detail">(scroll)</div>
+                <div class="detail-area">
+                    <div>© 2024</div>
+                    <div>(scroll)</div>
                 </div>
             </section>
 
             <section class="sc-content" id="sc-content">
-                <div class="content-wrap">
+                <div class="group-content">
                     <div class="area1">
-                        <ul class="area-wrap">
+                        <ul class="area-list">
                             <li class="area-item">
                                 <div class="img-box"><img src="./assets/images/area1-img1.png" alt></div>
                                 <span class="title"> <em>Creative</em></span>
@@ -121,13 +121,12 @@
                                 <div class="img-box"><img src="./assets/images/area1-img5.png" alt></div>
                                 <span class="title"> <em>Considerate</em></span>
                             </li>
-                            
                         </ul>
                     </div>
                     <div class="area2">
                         <div class="line"></div>
-                        <div class="grid">
-                            <div class="grid-right">
+                        <div class="text-wrap">
+                            <div class="text-box">
                                 <div class="title">About me</div>
                                 <div class="desc">
                                     <div><span class="font">"Just do it!"</span> 좋아하는 일을 위해 더 나아가고자 항상 노력합니다. </div>
@@ -146,18 +145,18 @@
                     <em>project<span class="blink">_</span></em>
                 </h2>
                 <div class="area area1">
-                    <div class="thumb-box">
+                    <div class="video-wrap">
                         <video autoplay loop muted>
                             <source src="./assets/images/Google Cloud_ The new way to cloud.mp4">
                         </video>
                     </div>
-                    <div class="con-area">
+                    <div class="content-wrap">
                         <div class="title">
                             <em>01</em>Google Cloud <span>(PC)</span>
                         </div>
                         <div class="line"></div>
             
-                        <div class="desc-wrap">
+                        <div class="desc-box">
                             <div class="box">
                                 <div class="desc">
                                     Google Cloud를 테마로 archipelago productions, google등 래퍼런스 사이트를 참고하여 리뉴얼한 PC적응형 사이트입니다.
@@ -175,12 +174,12 @@
                             </div>
                             <div class="link">
                                 <h3 class="blind">link</h3>
-                                <div class="tags links">
-                                    <a href="https://yunazzi.github.io/Google-Cloud/" target="_blank" class="btn-link">
+                                <div class="link-btn">
+                                    <a href="https://yunazzi.github.io/Google-Cloud/" target="_blank" class="site-btn">
                                         VIEW SITE
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
-                                    <a href="https://velog.io/@yunazzi/Google-Cloud" class="btn-link" target="_blank">
+                                    <a href="https://velog.io/@yunazzi/Google-Cloud" target="_blank" class="site-btn">
                                         CODE REVIEW
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
@@ -190,18 +189,18 @@
                     </div>
                 </div>
                 <div class="area area2">
-                    <div class="thumb-box">
+                    <div class="video-wrap">
                         <video autoplay loop muted>
                             <source src="./assets/images/sign-cms.mp4">
                         </video>
                     </div>
-                    <div class="con-area">
+                    <div class="content-wrap">
                         <div class="title">
                             <em>02</em>SIGN-CMS <span>(PC)</span>
                         </div>
                         <div class="line"></div>
             
-                        <div class="desc-wrap">
+                        <div class="desc-box">
                             <div class="box">
                                 <div class="desc">
                                     Sign-cms를 클론코딩한 PC 반응형 사이트이며, 자바스크립트 라이브러리인 Swiper, GSAP을 이용해 구현한 사이트입니다.
@@ -219,12 +218,12 @@
                             </div>
                             <div class="link">
                                 <h3 class="blind">link</h3>
-                                <div class="tags links">
-                                    <a href="https://yunazzi.github.io/sign-cms/" target="_blank" class="btn-link">
+                                <div class="link-btn">
+                                    <a href="https://yunazzi.github.io/sign-cms/" target="_blank" class="site-btn">
                                         VIEW SITE
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
-                                    <a href="https://velog.io/@yunazzi/sign-cms" target="_blank" class="btn-link">
+                                    <a href="https://velog.io/@yunazzi/sign-cms" target="_blank" class="site-btn">
                                         CODE REVIEW
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
@@ -234,18 +233,18 @@
                     </div>
                 </div>
                 <div class="area area3">
-                    <div class="thumb-box">
+                    <div class="video-wrap">
                         <video autoplay loop muted>
                             <source src="./assets/images/m-wizwid.mp4">
                         </video>
                     </div>
-                    <div class="con-area">
+                    <div class="content-wrap">
                         <div class="title">
                             <em>03</em>WIZWID <span>(MOBILE)</span>
                         </div>
                         <div class="line"></div>
             
-                        <div class="desc-wrap">
+                        <div class="desc-box">
                             <div class="box">
                                 <div class="desc">
                                     위즈위드를 클론코딩한 모바일 사이트이며, json을 이용해 직접 데이터를 담아두고 데이터 바인딩을 통해 컨텐츠와 메뉴를 불러오는 작업을 중점으로한 사이트입니다.
@@ -264,12 +263,12 @@
                             </div>
                             <div class="link">
                                 <h3 class="blind">link</h3>
-                                <div class="tags links">
-                                    <a href="https://yunazzi.github.io/wizwid/" target="_blank" class="btn-link">
+                                <div class="link-btn">
+                                    <a href="https://yunazzi.github.io/wizwid/" target="_blank" class="site-btn">
                                         VIEW SITE
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
-                                    <a href="https://velog.io/@yunazzi/WIZWID-Mobile-클론코딩" target="_blank" class="btn-link">
+                                    <a href="https://velog.io/@yunazzi/WIZWID-Mobile-클론코딩" target="_blank" class="site-btn">
                                         CODE REVIEW
                                         <svg viewBox="0 0 105 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 31H103M103 31L73.5 1.5M103 31L73.5 60.5" stroke="#010202" stroke-width="2" vector-effect="non-scaling-stroke"></path> </svg>
                                     </a>
@@ -286,7 +285,7 @@
                     <em>project<span class="blink">_</span></em>
                 </h2>
             
-                <div class="content swiper">
+                <div class="group-pc swiper">
                     <ul class="swiper-wrapper">
                         <li class="item swiper-slide">
                             <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
@@ -357,7 +356,6 @@
                         <li>
                             <a href="https://yunazzi.github.io/woowahan/" class="link" target="_blank">
                                 <div class="thumb-box">
-                                    <!-- <img src="./assets/images/m01.png" alt> -->
                                     <img src="./assets/images/media-woowahan.png" alt>
                                 </div>
                             </a>
@@ -373,7 +371,6 @@
                         <li>
                             <a href="https://yunazzi.github.io/andar/" class="link" target="_blank">
                                 <div class="thumb-box">
-                                    <!-- <img src="./assets/images/m02.png" alt> -->
                                     <img src="./assets/images/mobile-andar.png" alt>
                                 </div>
                                 <div class="title">
@@ -389,7 +386,6 @@
                         <li>
                             <a href="https://yunazzi.github.io/seoul/" class="link" target="_blank">
                                 <div class="thumb-box">
-                                    <!-- <img src="./assets/images/m03.png" alt> -->
                                     <img src="./assets/images/pc-seoul.png" alt>
                                 </div>
                                 <div class="title">
@@ -405,7 +401,6 @@
                         <li>
                             <a href="https://yunazzi.github.io/naver/" class="link" target="_blank">
                                 <div class="thumb-box">
-                                    <!-- <img src="./assets/images/m04.png" alt> -->
                                     <img src="./assets/images/pc-naver.png" alt>
                                 </div>
                                 <div class="title">
@@ -422,16 +417,17 @@
                 </div>
             </section>
                 
-            <section class="section sc-contact" id="sc-contact">
+            <section class="sc-contact" id="sc-contact">
                 <div class="contact-area">
-                    <h2 class="wrap">
-                        <em class="font">contact</em>
+                    <h2 class="main-title">
+                        <em>contact</em>
                     </h2>
-                    <div class="contact-content">
-                        <small class="sm-con">social media and contacts</small>
+                    <div class="contact-wrap">
+                        <small>social media and contacts</small>
                         <div class="line"></div>
+
                         <a href="https://www.instagram.com/una_publish?igsh=d3dtd2k1OWV6OHJ2&utm_source=qr" target="_blank" class="insta">
-                            <div class="out-title">
+                            <div class="outer-box">
                                 <div class="title">instagram</div>
                                 <div class="arrow">
                                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -446,7 +442,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="in-title swiper">
+                            <div class="inner-box swiper">
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <div class="title">instagram</div>
@@ -573,7 +569,7 @@
                             <div class="con-line"></div>
                         </a>
                         <a href="https://github.com/yunazzi" target="_blank" class="github">
-                            <div class="out-title">
+                            <div class="outer-box">
                                 <div class="title">github</div>
                                 <div class="arrow">
                                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -588,7 +584,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="in-title swiper">
+                            <div class="inner-box swiper">
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <div class="title">github</div>
@@ -715,7 +711,7 @@
                             <div class="con-line"></div>
                         </a>
                         <a href="https://velog.io/@yunazzi/posts" target="_blank" class="velog">
-                            <div class="out-title">
+                            <div class="outer-box">
                                 <div class="title">velog</div>
                                 <div class="arrow">
                                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -730,7 +726,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="in-title swiper">
+                            <div class="inner-box swiper">
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <div class="title">velog</div>
@@ -857,7 +853,7 @@
                             <div class="con-line"></div>
                         </a>
                         <a href="mailto:dbskgurwls@naver.com" class="email">
-                            <div class="out-title">
+                            <div class="outer-box">
                                 <div class="title">e-mail</div>
                                 <div class="arrow">
                                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -872,7 +868,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="in-title swiper">
+                            <div class="inner-box swiper">
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <div class="title">e-mail</div>
@@ -999,7 +995,7 @@
                             <div class="con-line"></div>
                         </a>
                         <a href="tel:+8210-3056-6876" class="tel">
-                            <div class="out-title">
+                            <div class="outer-box">
                                 <div class="title">phone</div>
                                 <div class="arrow">
                                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -1014,7 +1010,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="in-title swiper">
+                            <div class="inner-box swiper">
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                         <div class="title">phone</div>
@@ -1140,7 +1136,6 @@
                             </div>
                             <div class="con-line"></div>
                         </a>
-                        
                     </div>
                 </div>
             </section>

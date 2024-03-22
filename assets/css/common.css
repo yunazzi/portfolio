@@ -12,6 +12,7 @@
 .circle .circle_progress .frame,.circle .circle_progress .bar { fill: none; }
 .circle .circle_progress .frame { stroke: rgba(255,255,255,0.5); }
 .circle .circle_progress .bar { stroke: #fff; stroke-linecap: round; stroke-dasharray: 339.292; stroke-dashoffset: 339.292; }
+
 .circle .btn-gotop{ position: fixed; display: flex; align-items: center; justify-content: center; bottom: 76px; right: 48px; width: 35px; height: 35px; overflow: hidden; }
 .circle .btn-gotop svg path{ fill: #fff; }
 .circle .btn-gotop svg{ position: absolute; top: 100%; transition: top .3s;}
