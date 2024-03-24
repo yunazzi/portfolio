@@ -127,7 +127,7 @@ if(window.matchMedia("(min-width:769px").matches){ //768px이상
         }
     })
 
-    contactTl.from('.sc-contact .contact-area .font',{autoAlpha:0,y:100,duration:1,delay:1},"e")
+    contactTl.from('.sc-contact .contact-area h2',{autoAlpha:0,y:100,duration:1,delay:1},"e")
     contactTl.from('.sc-contact .contact-wrap small',{autoAlpha:0,y:100,duration:1,delay:1.1},"e")
     contactTl.from('.sc-contact .contact-wrap .line',{width:0,duration:1,delay:1},"e")
 
@@ -159,7 +159,6 @@ if(window.matchMedia("(min-width:769px").matches){ //768px이상
 }else{//768px 미만
 
 }
-
 
 $('.outer-box').mouseenter(function(){
     $(this).siblings('.inner-box').css({opacity:1,transform: "scaleY(1)"})

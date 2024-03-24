@@ -2,7 +2,7 @@
 @import './reset.css';
 @import './common.css';
 
-.wrapper{min-width: 320px; overflow-x: hidden;}
+.wrapper{min-width: 320px;}
 
 /* header */
 .header{ position: fixed; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; margin: 0 auto; padding: 30px 3vw; width: 100%; z-index: 99; mix-blend-mode: difference;}
