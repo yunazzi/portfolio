@@ -37,7 +37,7 @@
 
 
 /* sc-project main*/
-.sc-project.main{position: relative; height: 400vh; background: #fff;}
+.sc-project.main{position: relative; height: 400vh;}
 .sc-project.main .area1{position: sticky; top: 0; height: 100vh;}
 .sc-project.main .area2{position: sticky; top: 0; height: 100vh;}
 .sc-project.main .area3{position: sticky; top: 0; height: 100vh;}
